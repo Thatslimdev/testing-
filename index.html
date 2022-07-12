@@ -14,14 +14,21 @@
 		
 	</main>
 	<footer>
-		<button class="button" onclick="alert('Thanks For Clicking, you will be Redirected to my Github Profile. CREO is yet to be launched');"
+		<button class="button"
+		onclick="myfunction()" 
 		 >
 			<a href="https://github.com/thatslimdev">FIND OUT MORE</a>
 		</button>
 	</footer>
 <script>
-		window.location.href="https://github.com/thatslimdev";
-	}
+	function myfunction() {
+		let text;
+		if (confirm("Thanks For Clicking, you will be Redirected to my Github Profile. CREO Web Agency is yet to be launched.!")== true){
+			window.location.href="https://github.com/thatslimdev";
+		}else {
+			alert("Thank you")
+		}
+		};
 </script>
 </body>
 </html>
